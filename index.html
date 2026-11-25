@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumbre Andina · Aventura y desconexión (versión web)</title>
+  <style>
+    :root { --bg-dark:#1d2228; --bg-card:#262c34; --text-light:#f9fafb; --text-muted:#cbd5e1; --accent:#facc15; --accent-hover:#eab308; --border:#334155; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:var(--bg-dark); color:var(--text-light); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .skip-link { position:absolute; left:-9999px; }
+    .skip-link:focus { position:static; display:inline-block; padding:.5rem 1rem; background:var(--accent); color:#000; }
+    .top-banner { background:#14181d; text-align:center; font-size:.8rem; color:var(--text-muted); padding:.5rem 1rem; border-bottom:1px solid var(--border); }
+    header { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:auto; padding:1.25rem 1.5rem; }
+    .logo { font-weight:700; font-size:1.15rem; }
+    nav ul { list-style:none; display:flex; gap:1.75rem; font-size:.95rem; color:var(--text-muted); }
+    nav a:hover { color:var(--accent); }
+    .hero { text-align:center; max-width:820px; margin:4rem auto 5rem; padding:0 1.5rem; }
+    .badge { display:inline-block; border:1px solid #475569; background:rgba(255,255,255,.05); padding:.35rem .9rem; border-radius:999px; font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--text-muted); margin-bottom:1.5rem; }
+    .hero h1 { font-size:clamp(2.25rem,5vw,3.75rem); font-weight:800; line-height:1.15; margin-bottom:1.25rem; }
+    .hero h1 span { color:var(--accent); }
+    .hero p { font-size:1.125rem; color:var(--text-muted); max-width:600px; margin:0 auto 2rem; }
+    .btn-primary { display:inline-block; background:var(--accent); color:#111827; font-weight:700; padding:.9rem 1.75rem; border-radius:999px; transition:.2s; }
+    .btn-primary:hover { background:var(--accent-hover); }
+    section { max-width:1100px; margin:auto; padding:4rem 1.5rem; }
+    .section-header { text-align:center; max-width:680px; margin:0 auto 3rem; }
+    .section-header h2 { font-size:2rem; margin-bottom:.75rem; }
+    .section-header p { color:var(--text-muted); }
+    .grid-4 { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1.5rem; }
+    .grid-3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.75rem; }
+    .card { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:1.75rem; }
+    .card h3 { font-size:1.25rem; margin-bottom:.5rem; color:var(--accent); }
+    .card p { color:var(--text-muted); font-size:.95rem; }
+    .story-tag,.step-sub { font-size:.75rem; font-weight:700; letter-spacing:.06em; color:var(--accent); text-transform:uppercase; margin-bottom:.5rem; display:block; }
+    .story-meta { font-size:.85rem; color:#94a3b8; margin-bottom:.85rem; }
+    .story-source { margin-top:1rem; padding-top:.75rem; border-top:1px solid var(--border); font-size:.8rem; color:#94a3b8; }
+    .step-num { display:inline-flex; align-items:center; justify-content:center; width:2rem; height:2rem; background:var(--accent); color:#111827; font-weight:800; border-radius:50%; margin-bottom:1rem; }
+    .cta-box { text-align:center; background:linear-gradient(180deg,var(--bg-card),#181c22); border:1px solid var(--border); border-radius:16px; padding:3.5rem 1.5rem; margin:2rem auto 4rem; }
+    .cta-box h2 { font-size:2rem; margin-bottom:.75rem; }
+    .cta-box p { color:var(--text-muted); margin-bottom:1.75rem; }
+    footer { border-top:1px solid var(--border); background:#14181d; padding:2.5rem 1.5rem; font-size:.85rem; color:#94a3b8; }
+    .footer-inner { max-width:1100px; margin:auto; display:flex; flex-direction:column; gap:1rem; }
+    @media(max-width:700px){ header{flex-direction:column;gap:.8rem} nav ul{gap:.8rem;flex-wrap:wrap;justify-content:center} }
+  </style>
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <div class="top-banner">Proyecto académico · Cumbre Andina · COM123 UAI</div>
+  <header id="inicio"><a href="#inicio" class="logo">⛰️ Cumbre Andina</a><nav><ul><li><a href="#que-hacer">Qué hacer</a></li><li><a href="#historias">Historias</a></li><li><a href="#planifica">Planifica tu viaje</a></li></ul></nav></header>
+  <main id="contenido">
+    <div class="hero"><span class="badge">DESTINO REMOTO · SUR DE CHILE</span><h1>Cumbre Andina: aventura y <span>desconexión</span></h1><p><em>Silencio, cielo abierto y senderos poco recorridos. Un rincón sereno de los Andes que casi nadie conoce, todavía.</em></p><a href="#planifica" class="btn-primary">Ven a perderte a un nuevo destino →</a></div>
+    <section id="que-hacer"><div class="section-header"><h2>Qué hacer</h2><p>Aquí no hay multitudes ni ruido. Hay cuatro formas de vivir la montaña a tu propio ritmo.</p></div><div class="grid-4"><article class="card"><h3>Trekking</h3><p>Recorre senderos de montaña y descubre paisajes que pocos han visto.</p></article><article class="card"><h3>Camping</h3><p>Duerme bajo el cielo andino, lejos de todo, con el silencio como compañía.</p></article><article class="card"><h3>Panorama astronómico</h3><p>Mira el cielo de noche, sin luces de ciudad, y piérdete entre las estrellas.</p></article><article class="card"><h3>Adoración de la naturaleza</h3><p>Detente, respira y contempla. La montaña se disfruta mejor sin prisa.</p></article></div></section>
+    <section id="historias"><div class="section-header"><h2>Historias</h2><p>Relatos para imaginar tu llegada. Todos los textos declaran si fueron redactados con apoyo de IA.</p></div><div class="grid-3"><article class="card"><span class="story-tag">TREKKING</span><h3>Caminar hasta donde el sendero se vuelve silencio</h3><p class="story-meta">15 de octubre de 2026 · Equipo COM123</p><p>Un relato sobre avanzar paso a paso por senderos de montaña poco recorridos, donde el único ruido es el viento y el paisaje se abre en cada curva.</p><p class="story-source">Fuente: Texto creativo del equipo a partir del brief del destino (simulado) · <em>Redactado con apoyo de IA</em></p></article><article class="card"><span class="story-tag">PANORAMA ASTRONÓMICO</span><h3>Una noche sin ciudad: aprender a mirar el cielo</h3><p class="story-meta">15 de octubre de 2026 · Equipo COM123</p><p>Lejos de las luces, el cielo andino se enciende por completo. Una invitación a recostarse, apagar el teléfono y perderse entre las estrellas.</p><p class="story-source">Fuente: Texto creativo del equipo a partir del brief del destino (simulado) · <em>Redactado con apoyo de IA</em></p></article><article class="card"><span class="story-tag">CAMPING</span><h3>Dormir en la montaña: acampar con calma y sin dejar huella</h3><p class="story-meta">15 de octubre de 2026 · Equipo COM123</p><p>Montar la carpa al atardecer, despertar con el primer amarillo del amanecer y cuidar el lugar para quien llegue después.</p><p class="story-source">Fuente: Texto creativo del equipo a partir del brief del destino (simulado) · <em>Redactado con apoyo de IA</em></p></article></div></section>
+    <section id="planifica"><div class="section-header"><h2>Planifica tu viaje</h2><p>Llegar es parte de la aventura. Son tres pasos.</p></div><div class="grid-3"><article class="card"><span class="step-num">1</span><span class="step-sub">CUMBRE ANDINA</span><h3>Compra un pasaje al sur de Chile</h3><p>Elige tu vuelo o bus hacia el sur del país. Ciudad de llegada recomendada:</p></article><article class="card"><span class="step-num">2</span><span class="step-sub">CUMBRE ANDINA</span><h3>Compra un pasaje al lugar</h3><p>Desde el sur, toma el traslado hasta Cumbre Andina. Ruta, operador y duración:</p></article><article class="card"><span class="step-num">3</span><span class="step-sub">CUMBRE ANDINA</span><h3>Disfruta las actividades</h3><p>Trekking, camping, cielo estrellado y calma. Temporada recomendada:</p></article></div></section>
+    <section><div class="cta-box"><h2>¡Ven a perderte a un nuevo destino!</h2><p>Cumbre Andina te espera con silencio, montaña y cielo abierto.</p><a href="#inicio" class="btn-primary">Ven a perderte a un nuevo destino</a></div></section>
+  </main>
+  <footer><div class="footer-inner"><p><strong>Aviso de destino simulado:</strong> Cumbre Andina es un destino ficticio creado con fines académicos para el curso COM123 (UAI). No existe como lugar turístico real y no ofrece servicios, reservas ni ventas.</p><p><strong>Declaración de uso de IA:</strong> Este sitio fue diseñado y redactado con apoyo de inteligencia artificial (Claude, de Anthropic) a partir de un brief entregado por el equipo. Los contenidos deben ser revisados por el equipo antes de su entrega.</p><p>Proyecto académico · Cumbre Andina · COM123 UAI</p></div></footer>
+</body>
+</html>
